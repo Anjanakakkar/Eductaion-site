@@ -1,0 +1,75 @@
+.course-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0 0 10px;
+  display: inline-block;
+  padding: 0;
+  color: #21354b;
+  line-height: 22px;
+}
+
+.course-link {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0 0 10px;
+  display: inline-block;
+  padding: 0;
+  color: #21354b;
+  line-height: 22px;
+}
+
+.left-box table1 {
+  border: 1px solid #333;
+}
+
+.left-box .table2 td {
+  border: 1px solid #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 10px;
+  text-align: center !important;
+  vertical-align: middle;
+  background-color: rgba(255, 204, 102);
+}
+
+.left-box .table3 td {
+    border: 1px solid #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center !important;
+    vertical-align: middle;
+    background-color: rgba(255, 204, 102);
+  }
+
+.left-box .table4 td {
+    border: 1px solid #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center !important;
+    vertical-align: middle;
+    background-color: rgba(255, 204, 102);
+  }
+
+
+  .left-box .table5 td {
+    border: 1px solid #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center !important;
+    vertical-align: middle;
+    background-color: rgba(255, 204, 102);
+  }
+
+
+.footer {
+  width: 120%;       
+  margin-left: -9%;
+  padding: 40px 0;
+}

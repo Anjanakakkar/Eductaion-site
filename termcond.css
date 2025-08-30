@@ -1,0 +1,19 @@
+.left_box ul li a, .left_box a, .left_box a strong{
+    color: #eb7f00;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+h2 {
+  scroll-margin-top: 100px; /* Adjust based on header height */
+}
+
+.footer {
+  width: 120%;       
+  margin-left: -9%;
+  padding: 40px 0;
+}

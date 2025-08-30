@@ -1,0 +1,280 @@
+/*navbar-menubar*/
+/* Core nav link styles */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: orange !important;
+}
+.text-orange {
+  color: #f26522;
+}
+
+.custom-hover-link:hover {
+  color: orange !important;
+}
+
+
+/* Dropdown hover effect */
+.dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: orange !important;
+  background-color: transparent;
+}
+
+/* Optional soft highlight on hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #fff4e5;
+}
+
+/* Dropdown show on hover (desktop only) */
+@media (min-width: 768px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* Search/Login button styling */
+.header_search_box {
+  color: #004d8d !important;
+  border: 1px solid #ffffff;
+  padding: 8px 42px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.header_search_box:hover {
+  background-position: 0 0;
+}
+
+/* === Tablet / small‑desktop adjustments === */
+@media (max-width: 1024px) {
+  /* Reduce logo size slightly */
+  .logo img {
+    height: 40px;
+  }
+
+  /* Tighter spacing between nav items */
+  .navbar-nav {
+    gap: 1rem; /* instead of 1.5rem or 2rem */
+  }
+
+  /* Slightly smaller font in nav links */
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  /* Shrink badges (Live / Upcoming) */
+  .nav-item .badge {
+    font-size: 0.5rem;
+    padding: 0.25em 0.4em;
+  }
+
+  /* Reduce left/right padding on the Login button */
+  .header_search_box {
+    padding: 8px 30px;
+  }
+
+  /* Make the collapse toggle icon visible (if you’re using the navbar-toggler) */
+  .navbar-toggler {
+    display: block;
+  }
+
+  /* If using collapse, make sure nav-menu hides */
+  .nav-menu.d-md-flex {
+    display: none !important;
+  }
+}
+
+/* === Phone / portrait adjustments === */
+@media (max-width: 767px) {
+  .logo img {
+    height: 35px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .header_search_box {
+    padding: 6px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Collapse into one‑column nav */
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+  .right-box h4{
+      font-size: 20px;
+      color: #425365;
+      font-weight: 600;
+      margin: 20px 0 10px;
+    }
+
+/*profile form*/
+    .profile-form {
+      max-width: 400px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .flag-input {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.375rem 0.75rem;
+      border: 1px solid #ced4da;
+      border-radius: 25px;
+      background-color: #f1f1f1;
+    }
+
+    .flag-input input {
+      border: none;
+      background: transparent;
+      outline: none;
+      flex: 1;
+    }
+
+   .grade-selector {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .grade-option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .grade-option input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      margin-bottom: 5px;
+      transition: 0.2s ease;
+      outline: none;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .grade-option input[type="radio"]:checked {
+      background-color: #fd6a02; /* Orange fill */
+      border-color: #fd6a02;
+    }
+
+    .grade-option label {
+      cursor: pointer;
+      font-weight: 500;
+    }
+ 
+ .gradient-btn {
+    background: linear-gradient(to right, #f7971e, #fd346d);
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 0;
+    box-shadow: 0 6px 15px rgba(253, 52, 109, 0.3);
+    transition: opacity 0.3s ease;
+  }
+
+  .gradient-btn:hover {
+    opacity: 0.9;
+  }
+
+  /* course-detail right panel */
+
+     .course-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+    }
+
+    .course-left {
+      flex: 0 0 80px;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .course-left img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .course-right {
+      flex: 1;
+    }
+
+    .badges img {
+      margin-bottom: 10px;
+      max-width: 140px;
+      height: auto;
+    }
+
+    .course-title {
+      font-size: 1.05rem;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    .course-link {
+      font-weight: 500;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .course-link i {
+      margin-left: 6px;
+    }
+
+    /* Unique bottom borders */
+    .border-yellow {
+      border-bottom: 4px solid #f0c000;
+    }
+
+    .border-blue {
+      border-bottom: 4px solid #003566;
+    }
+
+    .border-purple {
+      border-bottom: 4px solid #a020f0;
+    }
+
+    .border-green{
+      border-bottom: 4px solid #65860e; 
+
+    }
+

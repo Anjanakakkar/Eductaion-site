@@ -1,0 +1,403 @@
+/*navbar-menubar*/
+/* fixed nav link styles */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 1rem 2rem; 
+
+}
+
+.nav-menu1{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: orange !important;
+}
+.text-orange {
+  color: #f26522;
+}
+
+/* Dropdown hover effect */
+.dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: orange !important;
+  background-color: transparent;
+}
+
+/* Optional soft highlight on hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #fff4e5;
+}
+
+/* Dropdown show on hover (desktop only) */
+@media (min-width: 768px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* Search/Login button styling */
+.header_search_box {
+  color: #004d8d !important;
+  border: 1px solid #ffffff;
+  padding: 8px 42px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.header_search_box:hover {
+  background-position: 0 0;
+}
+
+/* === Tablet / small‑desktop adjustments === */
+@media (max-width: 1024px) {
+  /* Reduce logo size slightly */
+  .logo img {
+    height: 40px;
+  }
+
+  /* Tighter spacing between nav items */
+  .navbar-nav {
+    gap: 1rem; /* instead of 1.5rem or 2rem */
+  }
+
+  /* Slightly smaller font in nav links */
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  /* Shrink badges (Live / Upcoming) */
+  .nav-item .badge {
+    font-size: 0.5rem;
+    padding: 0.25em 0.4em;
+  }
+
+  /* Reduce left/right padding on the Login button */
+  .header_search_box {
+    padding: 8px 30px;
+  }
+
+  /* Make the collapse toggle icon visible (if you’re using the navbar-toggler) */
+  .navbar-toggler {
+    display: block;
+  }
+
+  /* If using collapse, make sure nav-menu hides */
+  .nav-menu.d-md-flex {
+    display: none !important;
+  }
+}
+
+/* === Phone / portrait adjustments === */
+@media (max-width: 767px) {
+  .logo img {
+    height: 35px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .header_search_box {
+    padding: 6px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Collapse into one‑column nav */
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* explore courses */
+button:hover {
+  background-color: #000; /* dark background */
+}
+
+button:hover a {
+  color: white !important;
+}
+
+
+
+
+.btn-enroll {
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  background-color: #ff6a0b;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.img-bg {
+  display: flex;
+  justify-content: center;
+}
+
+.img-bg img {
+  max-width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.custom-hover-link:hover {
+  color: orange !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-bg img {
+    max-width: 90%;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero ul {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .img-bg img {
+    max-width: 100%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .hero p,
+  .hero ul,
+  .hero button {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero ul {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.card-link:hover {
+  color: orange;
+}
+
+.rank-card {
+  background-color: white;
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 220px; /* FIX width for uniform cards */
+  height: 90px; /* CONTROL height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Space between Rank and Exam text */
+}
+
+.rank-card {
+  background-color: white;
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.resource-section {
+  background-color: #b3eaf8;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.left-panel {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-panel {
+  background-color: #e6f6fb;
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 100%;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.resource-item img {
+  width: 50px;
+  height: 50px;
+  background-color: #b3eaf8;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .resource-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.section-5-top {
+  background: #ffffff !important; /* no gradient */
+  box-shadow: none !important; /* clean look */
+  border-radius: 0 !important; /* optional - if you want a flat bottom */
+  padding-right: 0 !important; /* clean edge */
+}
+
+.section-5 {
+  overflow: hidden;
+}
+
+.text-orange {
+  color: #f97316;
+}
+
+@media (max-width: 767px) {
+  .stats-box img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.section-6 {
+  background-color: #f8f9fa; /* Optional light background */
+  padding: 40px 0;
+}
+
+.section-6 h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.section-6 .p-tag2 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.btnTeacher {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btnTeacher:hover {
+  background-color: #0056b3;
+}
+
+.p-tag2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hover-orange {
+  background-color: #eceff5;
+  transition: background-color 0.3s ease;
+}
+
+.hover-orange:hover {
+  background-color: rgb(250, 250, 210);
+  color: rgb(246, 95, 18);
+}
+
+.hover-orange:hover .link-orange {
+  color: rgb(246, 95, 18);
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+}
+
+.accordion-button {
+  color: #333;
+  background: none;
+  box-shadow: none;
+  font-weight: 600 !important;
+  font-size: 17px;
+  line-height: 26px;
+  padding: 10px 25px;
+  height: unset !important;
+}
+
+.accordion-button:hover {
+background-color: #eceff5!important;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 40px;
+}
+
+.list-unstyled,
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer a i:hover {
+      color: orange !important;
+      transition: color 0.3s ease;
+    }
+
+    .footer-email:hover {
+  color: orange !important;
+  transition: color 0.3s ease;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .nav-desk {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .nav-mobile {
+    display: none;
+  }
+}
